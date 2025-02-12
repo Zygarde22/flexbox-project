@@ -4,18 +4,29 @@
 <head>
     <title>Flexbox Project</title>
     <style>
-        
+         
+        div {
+            display: flex;  
+            justify-content: space-between;  
+            align-items: center; 
+            height: 200px;  
+            background-color: lightgray;  
+        }
+
+         
+        div > div {
+            flex: 1; 
+            margin: 10px;  
+            background-color: lightblue;  
+            height: 100%;  
+        }
     </style>
 </head>
-
 
 <body>
     <h2>This is to Test Flexboxes</h2>
     <p>
-        Lorem ipsum dolor 
-        sit amet consectetur adipisicing elit. Repudiandae eos temporibus inventore architecto omnis, 
-        dignissimos ipsum illum accusamus
-        non? Natus eius fuga ipsa amet blanditiis iure animi voluptatum ipsam impedit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos temporibus inventore architecto omnis, dignissimos ipsum illum accusamus non? Natus eius fuga ipsa amet blanditiis iure animi voluptatum ipsam impedit?
     </p>
 
     <div>
