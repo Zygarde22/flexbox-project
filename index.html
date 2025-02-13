@@ -49,16 +49,43 @@
             color: darkorange;
             border-bottom: 2px solid darkorange;
         }
+
+        /* Form styles */
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            max-width: 400px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: navy;
+        }
     </style>
 </head>
 
 <body>
     <h2>This is to Test Flexboxes</h2>
     <p>
-        Lorem ipsum dolor 
-        sit amet consectetur adipisicing elit. <span>Repudiandae eos</span> temporibus inventore architecto omnis, 
-        dignissimos ipsum illum accusamus
-        non? Natus eius fuga ipsa amet blanditiis iure animi voluptatum ipsam impedit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Repudiandae eos</span> temporibus inventore architecto omnis, dignissimos ipsum illum accusamus non? Natus eius fuga ipsa amet blanditiis iure animi voluptatum ipsam impedit?
         Visit <a href="https://example.com">Example Website</a> for more information.
     </p>
 
@@ -71,6 +98,20 @@
     <div class="block">
         This is a block element with custom styling.
     </div>
+
+    <!-- Form Section -->
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" autofocus> 
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
